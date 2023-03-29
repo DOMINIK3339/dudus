@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontakt</title>
+  <style>
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Strona główna</a></li>
+        <li><a href="#">O nas</a></li>
+        <li><a href="#">Oferta</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Kontakt</h1>
+    <p>Skontaktuj się z nami:</p>
+    <ul>
+      <li>Telefon: 123-456-789</li>
+      <li>Email: kontakt@przykladowafirma.pl</li>
+      <li>Adres: ul. Przykładowa 1, 00-000 Warszawa</li>
+    </ul>
+    <form action="#" method="post">
+      <label for="name">Imię i nazwisko:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Wiadomość:</label>
+      <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
+      <input type="submit" value="Wyślij">
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2023 Przykładowa Firma. Wszelkie prawa zastrzeżone.</p>
+  </footer>
+</body>
+</html>
