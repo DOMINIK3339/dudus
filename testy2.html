@@ -1,78 +1,154 @@
 <!DOCTYPE html>
-<html lang="pl">
-<head>
-  <meta charset="UTF-8">
-  <title>Kontakt</title>
-  <style>
-    form {
-      max-width: 500px;
-      margin: 0 auto;
-    }
-    label {
-      display: block;
-      margin-bottom: 5px;
-    }
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin-bottom: 20px;
-      font-size: 16px;
-      font-family: Arial, sans-serif;
-    }
-    input[type="submit"] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
-      font-family: Arial, sans-serif;
-    }
-    input[type="submit"]:hover {
-      background-color: #45a049;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <nav>
+<html>
+  <head>
+    <title>Social Media Icons</title>
+    <!-- Link do arkusza stylów Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+      /* Style dla sekcji social-media-icons */
+      .social-media-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      /* Style dla ikon w sekcji social-media-icons */
+      .social-media-icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #333;
+        color: #fff;
+        margin: 10px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      /* Style dla nazw kanałów w sekcji social-media-icons */
+      .social-media-icons a span {
+        display: none;
+      }
+
+      /* Zmiana koloru ikon po najechaniu kursorem */
+      .social-media-icons a:hover {
+        background-color: #666;
+      }
+
+      /* Style dla sekcji social-media-follow */
+      .social-media-follow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+      }
+
+      /* Style dla nagłówka sekcji social-media-follow */
+      .social-media-follow h2 {
+        margin-bottom: 10px;
+      }
+
+      /* Style dla listy w sekcji social-media-follow */
+      .social-media-follow ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Style dla elementów listy w sekcji social-media-follow */
+      .social-media-follow li {
+        margin-bottom: 10px;
+      }
+
+      /* Style dla sekcji social-media-share */
+      .social-media-share {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+      }
+
+      /* Style dla nagłówka sekcji social-media-share */
+      .social-media-share h2 {
+        margin-bottom: 10px;
+      }
+
+      /* Style dla elementów formularza w sekcji social-media-share */
+      .social-media-share input[type="text"] {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 1px 1px 5px #999;
+      }
+
+      .social-media-share input[type="submit"] {
+        width: 150px;
+        height: 40px;
+        background-color: #333;
+        color: #fff;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .social-media-share input[type="submit"]:hover {
+        background-color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Social Media Icons</h1>
+    <p>Follow us on:</p>
+    <div class="social-media-icons">
+      <a href="#">
+        <i class="fab fa-facebook-f"></i>
+        <span>Facebook</span>
+      </a>
+      <a href="#">
+        <i class="fab fa-twitter"></i>
+        <span>Twitter</span>
+      </a>
+      <a href="#">
+        <i class="fab fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+      <a href="#">
+        <i class="fab fa-linkedin-in"></i>
+        <span>LinkedIn</span>
+      </a>
+      <a href="#">
+        <i class="fab fa-youtube"></i>
+        <span>YouTube</span>
+      </a>
+    </div>
+
+    <!-- Sekcja z przyciskami "Follow us" -->
+    <div class="social-media-follow">
+      <h2>Follow us</h2>
       <ul>
-        <li><a href="#">Strona główna</a></li>
-        <li><a href="#">O nas</a></li>
-        <li><a href="#">Oferta</a></li>
-        <li><a href="#">Kontakt</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">YouTube</a></li>
       </ul>
-    </nav>
-  </header>
-  <main>
-    <h1>Kontakt</h1>
-    <p>Skontaktuj się z nami:</p>
-    <ul>
-      <li>Telefon: 123-456-789</li>
-      <li>Email: kontakt@przykladowafirma.pl</li>
-      <li>Adres: ul. Przykładowa 1, 00-000 Warszawa</li>
-    </ul>
-    <form action="#" method="post">
-      <label for="name">Imię i nazwisko:</label>
-      <input type="text" id="name" name="name" required>
+    </div>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Wiadomość:</label>
-      <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-
-      <input type="submit" value="Wyślij">
-    </form>
-  </main>
-  <footer>
-    <p>&copy; 2023 Przykładowa Firma. Wszelkie prawa zastrzeżone.</p>
-  </footer>
-</body>
+    <!-- Sekcja z formularzem "Share on social media" -->
+    <div class="social-media-share">
+      <h2>Share on social media</h2>
+      <form>
+        <input type="text" placeholder="Enter your message">
+        <input type="submit" value="Share">
+      </form>
+    </div>
+  </body>
 </html>

@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
   <style>
     h1 {
       font-family: 'Poppins', sans-serif;
@@ -25,6 +26,157 @@
 	footer a {
 	color: #ffa500; 
 	text-decoration: none;
+	}
+	html {
+	height: 100%;
+	box-sizing: border-box;
+	}
+
+	body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+	main {
+	flex: 1;
+	}
+	body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .social-media-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+
+      .social-media-icons a {
+        display: inline-block;
+        margin-right: 20px;
+		margin-top: 90px;
+		margin-bottom: 300px;
+        text-decoration: none;
+        color: #333;
+        font-size: 35px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .social-media-icons a:hover {
+        color: #3b5998;
+      }
+
+      .social-media-icons a i {
+        margin-right: 10px;
+      }
+
+      .social-media-follow {
+        margin-top: 50px;
+      }
+
+      .social-media-follow h2 {
+        margin-bottom: 10px;
+      }
+
+      .social-media-follow ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .social-media-follow li {
+        margin-right: 20px;
+      }
+
+      .social-media-follow a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .social-media-follow a:hover {
+        color: #3b5998;
+      }
+
+      .social-media-share {
+        margin-top: 50px;
+      }
+
+      .social-media-share h2 {
+        margin-bottom: 10px;
+      }
+
+      .social-media-share input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      .social-media-share input[type="submit"] {
+        display: block;
+        background-color: #3b5998;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+      .social-media-share input[type="submit"]:hover {
+        background-color: #2d4373;
+      }
+      .social-media-icons-2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .social-media-icons-2 a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #333;
+        color: #fff;
+        margin: 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+      .social-media-icons-2 a span {
+        display: none;
+      }
+      .social-media-icons-2 a:hover {
+        background-color: #666;
+      }
+      .social-media-follow-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+      }
+      .social-media-follow-2 h2 {
+        margin-bottom: 10px;
+      }
+      .social-media-follow-2 ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+	 }
+	 a span {
+	margin-right: 50px;
+	}
+	aspan {
+	margin-right: 50px;
 	}
   </style>
 	<title>Social media</title>
@@ -83,22 +235,11 @@
 		margin: 0 35px;
 		}
 		body {
-			background-image: url(back.jpg);
+			background-image: url(Zdjęcia/back.jpg);
 		}			
 	</style>
 </head>
 <body>
-<script type="text/javascript">
-        document.onkeydown = function(event) {
-            if (event.keyCode == 123) {
-                return false;
-            }
-        }
-
-        window.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-        }, false);
-    </script>
 	<span style="display:none;">Usuwanie prawego przycisku "Zbadaj"</span>
 	<header>
 		<div class="logo">
@@ -115,6 +256,57 @@
 			<a href="Kontakt.html">Kontakt</a>
 		</div>
 	</header>
+	<div class="social-media-icons">
+      <a href="https://www.facebook.com/dominik.bilski.167/">
+        <i style="color: #1877f2;" class="fab fa-facebook-f"></i>
+        <span>Facebook</span>
+      </a>
+      <a href="https://twitter.com/1Dudusq">
+        <i style="color: #1da1f2;" class="fab fa-twitter"></i>
+        <span>Twitter</span>
+      </a>
+      <a href="https://www.instagram.com/demel_priv/">
+        <i style="color: #d7005b;" class="fab fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+      <a href="https://discord.gg/AFpuqNXycn">
+        <i style="color: #7289da;" class="fab fa-discord"></i>
+        <span>Discord</span>
+      </a>
+      <a href="https://www.youtube.com/channel/UCZWKCmmaZkb2eUZos83KVGg">
+        <i style="color: #FF0000;" class="fab fa-youtube"></i>
+        <span>YouTube</span>
+	<a href="https://www.snapchat.com/add/dudusqs?share_id=PuUPBIts1Bg&locale=pl-PL">
+        <i style="color: #fffc00;" class="fab fa-snapchat"></i>
+        <span>Snapchat</span>
+      </a>
+    </div>
+	<div class="social-media-icons-2">
+      <a href="https://www.facebook.com/dominik.bilski.167/">
+        <i style="color: #1877f2;" class="fab fa-facebook-f"></i>
+        <span>Facebook</span>
+      </a>
+      <a href="https://twitter.com/1Dudusq">
+        <i style="color: #1da1f2;" class="fab fa-twitter"></i>
+        <span>Twitter</span>
+      </a>
+      <a href="https://www.instagram.com/demel_priv/">
+        <i style="color: #d7005b;" class="fab fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+      <a href="https://discord.gg/AFpuqNXycn">
+        <i style="color: #7289da;" class="fab fa-discord"></i>
+        <span>Discord</span>
+      </a>
+      <a href="https://www.youtube.com/channel/UCZWKCmmaZkb2eUZos83KVGg">
+        <i style="color: #FF0000;" class="fab fa-youtube"></i>
+        <span>YouTube</span>
+	<a href="https://www.snapchat.com/add/dudusqs?share_id=PuUPBIts1Bg&locale=pl-PL">
+        <i style="color: #fffc00;" class="fab fa-snapchat"></i>
+        <span>Snapchat</span>
+      </a>
+    </div>
+	
 	<header>
 	<footer style="text-align: center;">
   <nav>
