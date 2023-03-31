@@ -84,11 +84,23 @@
 		margin: 0 35px;
 		}
 		body {
-			background-image: url(Zdjęcia/back.jpg);
+			background-image: url(back.jpg);
 		}		
 	</style>
 </head>
 <body>
+<script type="text/javascript">
+        document.onkeydown = function(event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+        }
+
+        window.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        }, false);
+    </script>
+<span style="display:none;">Usuwanie prawego przycisku "Zbadaj"</span>
 	<header>
 		<div class="logo">
 			<img src="Zdjęcia/logo.png" alt="Logo" />

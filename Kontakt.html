@@ -46,6 +46,12 @@
     label {
       display: block;
       margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
     }
     input[type="text"],
     input[type="email"],
@@ -78,7 +84,14 @@
 	}
 	h3 {
 	text-align: center;
-	line-height: 1.5;
+	line-height: 2;
+	}
+	textarea {
+      width: 50%;
+    }
+	.centered {
+	display: block;
+	margin: 0 auto;
 	}
   </style>
 	<title>Kontakt</title>
@@ -138,9 +151,21 @@
 	</style>
 </head>
 <body>
+	<script type="text/javascript">
+        document.onkeydown = function(event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+        }
+
+        window.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        }, false);
+    </script>
+	<span style="display:none;">Usuwanie prawego przycisku "Zbadaj"</span>
 	<header>
 		<div class="logo">
-			<img src="logo.png" alt="Logo" />
+			<img src="Zdjęcia/logo.png" alt="Logo" />
 			<h1 style="border-bottom: none;"><span style="color: #0066CC;">Serwis komputerowy Dudus</span></h1>
 		</div>
 		
@@ -160,17 +185,19 @@
 	<h3><li><span style="color: #CC6699;">Telefon:  +48 799-353-925</li></h3>
     <h3><li><span style="color: #009900;"> Email:  dudus@serwiskomputerowy.pl</li></h3>
     <h3><li><span style="color: #009999;">Adres:  ul. Papieża 17, 34-734 Warszawa</li></h3>
-	<form action="Kontakt-dane/sumbit.php" method="post">
+	<div style="display: Flex;">
+	<form action="Kontakt-dane/sumbit.php" method="post" style="width: 50%; height: 50%;">
       <label for="name">Imię i nazwisko:</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="name"  style="width:100%;" required>
 
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email"  style="width:100%;" required>
 
       <label for="message">Wiadomość:</label>
-      <textarea id="message" name="message" rows="3" cols="30" required></textarea>
+      <textarea id="message" name="message" rows="3" cols="30" style="width:100%; height: 40%;" required></textarea>
 
-      <input type="submit" value="Wyślij">
+      <input type="submit" value="Wyślij" class="centered">
+	 </div>
 	<header>
 	
 	<footer style="text-align: center;">

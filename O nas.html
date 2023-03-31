@@ -151,9 +151,21 @@
 	</style>
 </head>
 <body>
+<script type="text/javascript">
+        document.onkeydown = function(event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+        }
+
+        window.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        }, false);
+    </script>
+	<span style="display:none;">Usuwanie prawego przycisku "Zbadaj"</span>
 	<header>
 		<div class="logo">
-			<img src="logo.png" alt="Logo" />
+			<img src="Zdjęcia/logo.png" alt="Logo" />
 			<h1 style="border-bottom: none;"><span style="color: #0066CC;">Serwis komputerowy Dudus</span></h1>
 		</div>
 		
@@ -170,17 +182,17 @@
 	<section>
 		<h2>Nasza grupa</h2>
 		<div class="team-member">
-			<img src="john.png" alt="John Smith">
+			<img src="Zdjęcia/john.png" alt="John Smith">
 			<h3>John Smith</h3>
 			<p>Asystent</p>
 		</div>
 		<div class="team-member">
-			<img src="jane.jpg" alt="Jane Doe">
+			<img src="Zdjęcia/jane.jpg" alt="Jane Doe">
 			<h3>Jane Doe</h3>
 			<p>Pomocnik</p>
 		</div>
 		<div class="team-member">
-			<img src="Dominik Dudus.jpg" alt="Dominik Dudus">
+			<img src="Zdjęcia/Dominik Dudus.jpg" alt="Dominik Dudus">
 			<h3>Dominik Dudus</h3>
 			<p>Właściciel</p>
 		</div>
